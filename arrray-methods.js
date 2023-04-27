@@ -19,13 +19,13 @@ months.forEach((month, i) => {
     if (month === "Abril") console.log(`${i}`);
 });
 
-// Array Methods Include
+// Array Methods Include  -   esta incluido
 //-----------------------------------------
 
 const result = months.includes("Enero");
 console.log(result);
 
-// Array Methods some -> Para arrelo de objetosa
+// Array Methods some -> Para arrelo de objetosa  - Some al menos uno se cumple
 //-----------------------------------------
 
 const exist = shophing.some(item => item.nombre === 'Teclado');
@@ -34,7 +34,7 @@ console.log(exist);
 const existMonth = months.some(month => month === "Diciembre");
 console.log(existMonth);
 
-// Array methods findIndex
+// Array methods findIndex  -  el index encontrado o -1
 
 const indexMonth = months.findIndex(month => month === "Abril");
 console.log(indexMonth);
@@ -42,7 +42,7 @@ console.log(indexMonth);
 const indexShop = shophing.findIndex(shop => shop.nombre === "Pepita");
 console.log(indexShop);
 
-// Array methods reduce
+// Array methods reduce  -  opera con el resultado
 
 // con un ciclo sumamos
 let total = 0;
@@ -53,4 +53,14 @@ console.log(total);
 const res = shophing.reduce((total, shop) => total + shop.precio, 0);
 console.log(res);
 
-// Array mt
+// Array methods filter  -  un filtro aplicado a los datos
+const filtrados = shophing.filter(shop => shop.precio < 400);
+console.log(filtrados);
+
+// Array method find  -  busca la primera coincidencia
+const buscado = shophing.find(shop => shop.precio === 100);
+console.log(buscado);
+
+// Array methods every   -  todos los datos deven cumplir condicion
+const todos = shophing.every(shop => shop.precio === 10101);
+console.log(todos);
