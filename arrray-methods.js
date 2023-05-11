@@ -53,6 +53,8 @@ console.log(total);
 const res = shophing.reduce((total, shop) => total + shop.precio, 0);
 console.log(res);
 
+const a = months.reduce
+
 // Array methods filter  -  un filtro aplicado a los datos
 const filtrados = shophing.filter(shop => shop.precio < 400);
 console.log(filtrados);
@@ -64,3 +66,6 @@ console.log(buscado);
 // Array methods every   -  todos los datos deven cumplir condicion
 const todos = shophing.every(shop => shop.precio === 10101);
 console.log(todos);
+
+
+
